@@ -1,0 +1,76 @@
+﻿<Window x:Class="WpfApp1.TaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="TaskWindow" Height="450" Width="800">
+    <Grid Margin="0,0,3.6,-5">
+        <Label Content="Добро пожаловать, Аристарх Рабинович!" Margin="262,36,267,340"/>
+        <Button x:Name="money" Content="Отчет об аренде" Margin="426,165,164,230" RenderTransformOrigin="0.5,0.5" Click="money_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.301"/>
+                    <TranslateTransform X="-0.017" Y="-0.752"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="add_citizens" Content="Добавление новых жителей" Margin="143,165,446,231" RenderTransformOrigin="0.5,0.5" Click="add_citizens_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.301"/>
+                    <TranslateTransform X="-0.013" Y="0.744"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="remove_sitizens" Content="Удаление жителей" Margin="143,210,446,186" RenderTransformOrigin="0.5,0.5" Click="remove_sitizens_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.301"/>
+                    <TranslateTransform X="0.223" Y="0.743"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="list_of_free_room" Content="Список занятости квартир" Margin="426,120,164,276" RenderTransformOrigin="0.5,0.5" Click="list_of_free_room_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.301"/>
+                    <TranslateTransform X="-0.252" Y="-0.752"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Escape" Content="Назад" Margin="426,215,164,181" RenderTransformOrigin="0.5,0.5" Click="Escape_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.301"/>
+                    <TranslateTransform X="0.248" Y="-0.754"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="citizens" Content="Жители" Margin="143,120,446,275" RenderTransformOrigin="0.5,0.5" Click="citizens_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.301"/>
+                    <TranslateTransform X="-0.248" Y="0.744"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Sender_button" Content="Отправка данных на сервер" HorizontalAlignment="Left" Margin="129,270,0,0" VerticalAlignment="Top" Width="214" Height="86" Click="Sender_button_Click"/>
+        <Button x:Name="Download_button" Content="Выгрузка данных с сервера" HorizontalAlignment="Left" Margin="435,270,0,0" VerticalAlignment="Top" Width="207" Height="86" Click="Download_button_Click"/>
+        <Viewbox HorizontalAlignment="Left" Height="100" Margin="1005,380,-315,-55" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</Window>
